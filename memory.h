@@ -67,6 +67,8 @@ void myplan(int plan) {
     cp[0] = 0;
     cp[1] = 4;
 
+    // SUBUH - 12.6 - 12.0
+
     c(a++, 0, hitam, 4,  10, 150,  100, 100, 0b1100000000000, atau, 50,  pid,  -40,  120,  120, hitam, 0b11000000000000, atau); //0
     c(a++, 0, hitam, 3,  10, 80,  300, 80, 0b00000000000011, atau, 50,  pid,  120,  -40,  150, hitam, 0b00000000001100, atau); //1
     c(a++, 0, hitam, 3,  10, 200,  280, 100, 0b00000000000011, atau, 50,  pid,  120,  -40,  150, hitam, 0b00000000001100, atau); //2
@@ -130,7 +132,19 @@ void myplan(int plan) {
   if (plan == 6) {
     int a = 0;                             //JANCOK NGENE AE GAAK MARI MARI
     cp[0] = 0;                             //LEK GAK NIAT LOMBAA NGOMONGOOO
-    c(a++, 0, hitam, 3,  5, 100,  200, 100, 0b11000000000000, atau, 0,   pid,     0,     0,      0, hitam, 0b11000000000000, atau); //0
+    c(a++, 0, hitam, 3,  15, 200,  600, 100, 0b11000000000011, atau, 0,   free,     100,     100,      200, hitam, 0b11000000000000, atau); //0
+    c(a++, 0, putih, 3,  15, 80,  100, 100, 0b11000000000000, atau, 50,   pid,     -40,     120,      120, putih, 0b11000000000000, atau); //0
+    c(a++, 0, putih, 3,  20, 150,  450, 80, 0b11000000000011, atau, 0,   free,     100,     100,      100, putih, 0b11000000000000, atau); //0
+    c(a++, 0, hitam, 3,  15, 80,  200, 80, 0b00000000000011, atau, 0,   pid,     120,     -40,      120, hitam, 0b00000000011000, atau); //0
+    c(a++, 0, hitam, 3,  15, 150, 200,  100, 0b11100000000111, atau,  0, free,    100,     100,  0, hitam, 0b00110000000000, atau); //28
+    c(a++, 0, hitam, 3,  8, 100, 440,  30, TM           , atau,  0, pickp,    0,     0,  3000, hitam, 0b10000000000001, atau); //29 ( CP 4 )
+
+    c(a++, 0, hitam, 3,  8, 0, 0,  0, TM, atau,  0, free,    -130,     120,  340, hitam, 0b11000000000000, atau); //30
+    c(a++, 0, hitam, 3,  8, 0, 0,  0, TM, atau,  0, free,    100,     100,  100, hitam, 0b11000000000000, atau); //31
+    c(a++, 0, hitam, 4,  15, 200, 600,  80, 0b00000000000011, atau,  30, pid,    120,     -40,  120, hitam,     0b00000000000110, atau); //32
+    c(a++, 0, hitam, 3,  10, 100, 200,  60, 0b11000000000011, atau,  0, free,    0,       0,  0, hitam, 0b00000000001100, atau); //33
+    c(a++, 0, hitam, 3,  15, 120, 600,  60, TM             , atau,  0, drop,    0,       0,  600, hitam, 0b00000000001100, atau); //34
+
   }
   if (plan == 7) {
     int a = 0;                             //JANCOK NGENE AE GAAK MARI MARI
